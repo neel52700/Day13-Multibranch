@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('Deployment') {
+        stage('Deploy') {
             steps {
                 script {
                     echo "Running Deployment on development branch: ${env.BRANCH_NAME}"
