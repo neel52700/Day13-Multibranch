@@ -12,8 +12,8 @@ pipeline {
             steps {
                 script {
                     echo "Building development branch: ${env.BRANCH_NAME}"
-                    sh javac Sample.java
-                    sh java Sample
+                    sh 'javac Sample.java'
+                    sh 'java Sample'
                 }
             }
         }
@@ -22,8 +22,8 @@ pipeline {
             steps {
                 script {
                     echo "Running Deployment on development branch: ${env.BRANCH_NAME}"
-                    sh javac Sample.java
-                    sh java Sample
+                    sh 'javac Sample.java'
+                    sh 'java Sample'
                 }
             }
         }
